@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
-import { ForumPost } from '../../models/forumPostModel';
-import { ForumThread } from '../../models/forumThreadModel';
-import dbConnect from '../../db/db';
+import { ForumPost } from '../../../models/forumPostModel';
+import { ForumThread } from '../../../models/forumThreadModel';
+import dbConnect from '../../../db/db';
 
 export async function GET(request, { params }) {
   try {

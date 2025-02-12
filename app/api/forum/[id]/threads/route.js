@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
-import { ForumThread } from '../../models/forumThreadModel';
-import dbConnect from '../../forum/db/db';
+import { ForumThread } from '../../../models/forumThreadModel';
+import dbConnect from '../../../db/db';
 
 export async function GET(request, { params }) {
   try {
