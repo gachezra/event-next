@@ -41,7 +41,7 @@ const AboutUsContent = () => {
           <Link href="/profile" className="text-white font-medium underline">
             Profile
           </Link>{' '}
-          section. Head to the 'My Tickets' section to view and manage your event tickets.
+          section. Head to the &apos;My Tickets&apos; section to view and manage your event tickets.
         </>
       ),
     },
@@ -54,11 +54,11 @@ const AboutUsContent = () => {
           <Link href="/events" className="text-white font-medium underline">
             Events
           </Link>{' '}
-          section, find the event you're interested in, register and join the conversation. Alternatively, you can find the event link under 'My Tickets' in your{' '}
+          section, find the event you&apos;re interested in, register and join the conversation. Alternatively, you can find the event link under &apos;My Tickets&apos; in your{' '}
           <Link href="/profile" className="text-white font-medium underline">
             Profile
           </Link>{' '}
-          page for your registered event's forum.
+          page for your registered event&apos;s forum.
         </>
       ),
     },

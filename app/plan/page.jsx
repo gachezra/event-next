@@ -19,7 +19,7 @@ export default function PlanEventPage() {
           <li>Select the date and time for the event.</li>
           <li>Enter the location where the event will be held.</li>
           <li>Upload an image for your event (optional).</li>
-          <li>Click the "Submit" button to publish your event.</li>
+          <li>Click the &quot;Submit&quot; button to publish your event.</li>
         </ol>
         <PlanEventForm />
       </main>

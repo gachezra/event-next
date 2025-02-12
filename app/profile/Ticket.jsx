@@ -1,6 +1,6 @@
 import React from 'react';
 import QRCode from 'qrcode.react';
-import Link from 'next/navigation';
+import { Link } from 'next/navigation';
 
 const Ticket = ({ event }) => {
   const user = localStorage.getItem(`${process.env.REACT_APP_LOCALHOST_KEY}`);

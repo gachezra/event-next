@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/navigation';
+import { Link } from 'next/navigation';
 
 const EventCard = ({ event, isProfilePage, onEdit, onDelete }) => {
   const handleImageError = (e) => {

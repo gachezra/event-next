@@ -39,7 +39,7 @@ const ContactContent = () => {
         <section className="my-8 text-center">
           <h1 className="text-3xl font-semibold mb-3">Get in Touch</h1>
           <p className=" mb-4">
-            We'd love to hear from you! Whether you have questions about our events, how to post your event, feedback, or just want to say hello, feel free to reach out to us.
+            We&apos;d love to hear from you! Whether you have questions about our events, how to post your event, feedback, or just want to say hello, feel free to reach out to us.
           </p>
         </section>
         <h1 className="text-2xl font-semibold mb-3">Contact Us</h1>

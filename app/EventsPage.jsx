@@ -115,7 +115,7 @@ const EventsPage = () => {
       {/* Featured Events Section */}
       <section className="mb-12">
         <h2 className="text-white text-lg font-semibold mb-6">Featured Events</h2>
-        <p className="text-white mb-6">Dive into the hottest events everyone is buzzing about. Don't miss out on the action!</p>
+        <p className="text-white mb-6">Dive into the hottest events everyone is buzzing about. Don&apos;t miss out on the action!</p>
         <div className="relative">
           <div className="overflow-hidden">
             <div 
@@ -160,7 +160,7 @@ const EventsPage = () => {
       {/* More Events Section */}
       <section>
         <h2 className="text-white text-lg font-semibold mb-6">More Events</h2>
-        <p className="text-white mb-6">From music festivals and house parties to tech meetups, there's something for everyone. Find your perfect event below.</p>
+        <p className="text-white mb-6">From music festivals and house parties to tech meetups, there&apos;s something for everyone. Find your perfect event below.</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {displayedMoreEvents.map(event => (
             <div 

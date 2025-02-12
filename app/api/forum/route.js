@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { ForumThread } from '../models/forumThreadModel';
 import { Event } from '../models/eventsModel';
-import { User } from '../models/userModel';
+import { Users } from '../models/userModel';
 import dbConnect from '../db/db';
 
 export async function POST(request) {
@@ -15,7 +15,7 @@ export async function POST(request) {
       return NextResponse.json({ msg: "Event not found.", status: false });
     }
 
-    const user = await User.findById(userId);
+    const user = await Users.findById(userId);
     if (!user) {
       return NextResponse.json({ msg: "User not found.", status: false });
     }

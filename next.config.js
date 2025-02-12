@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    reactStrictMode: true,
-    favicon: './public/favicon.svg'
+    reactStrictMode: true
 };
 
 module.exports = nextConfig;
