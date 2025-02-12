@@ -1,6 +1,8 @@
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
 export function Footer () {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="bg-[#131324] text-white py-10">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
@@ -44,7 +46,7 @@ export function Footer () {
           </div>
         </div>
         <div className="w-full md:w-1/3 flex justify-center md:justify-end text-sm text-gray-400">
-          &copy; 2024 EventKick. All rights reserved.
+          &copy; {currentYear} EventKick. All rights reserved.
         </div>
       </div>
     </footer>

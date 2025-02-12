@@ -2,12 +2,10 @@ import { Suspense } from 'react';
 import axios from 'axios';
 import EventDetails from './eventDetails';
 
-// Fetch event data
 async function getEvent(id) {
   if (!id) return null;
-  
+
   try {
-    // Use absolute URL to avoid Invalid URL error
     const baseUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000';
     const response = await axios.get(`${baseUrl}/api/event/${id}`);
     return response.data;
@@ -17,11 +15,8 @@ async function getEvent(id) {
   }
 }
 
-// Generate metadata
 export async function generateMetadata({ params }) {
-  // Wait for params to resolve
-  const resolvedParams = await Promise.resolve(params);
-  const id = resolvedParams?.id;
+  const { id } = params;
 
   if (!id) {
     console.error("No ID provided in params");
@@ -52,7 +47,6 @@ export async function generateMetadata({ params }) {
     };
   } catch (error) {
     console.error("Error in generateMetadata:", error);
-
     return {
       title: "Event Details",
       description: "Discover event details here.",
@@ -60,11 +54,8 @@ export async function generateMetadata({ params }) {
   }
 }
 
-// Main page component
-export default async function Page({ params }) {
-  // Wait for params to resolve
-  const resolvedParams = await Promise.resolve(params);
-  const id = resolvedParams?.id;
+export default function Page({ params }) {
+  const { id } = params;
 
   return (
     <main className="min-h-screen bg-[#131324]">

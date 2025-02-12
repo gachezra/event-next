@@ -10,9 +10,9 @@ export const metadata = {
   },
   description: 'Find the best events happening in Mombasa tonight and this weekend. Live music, beach parties, cultural events, and more!',
   keywords: [
+    "what's on mombasa",
     'events in mombasa',
     'mombasa events',
-    "what's on mombasa",
     'tonight in mombasa',
     'this weekend in mombasa',
     'mombasa entertainment',
