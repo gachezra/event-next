@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+body,
+button,
+input {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :not(pre) > code {
+        @apply px-1 py-0.5 font-mono rounded bg-neutral-900 text-yellow-200;
+        font-size: 0.9em;
+    }
+
+    h1 {
+        @apply mb-6 text-4xl font-bold tracking-tight md:text-5xl;
+    }
+}
+
+
+.markdown {
+    @apply mb-1;
+}
+
+.alert .markdown {
+    @apply mb-0;
+}
+
+.markdown p {
+    @apply mb-3;
+}
+
+.btn:disabled {
+    @apply text-neutral-400 bg-neutral-700;
+}
