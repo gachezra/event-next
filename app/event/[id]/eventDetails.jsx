@@ -84,7 +84,7 @@ export default function EventDetails({ id }) {
         className="max-w-7xl mx-auto"
       >
         {/* Hero Section */}
-        <div className="relative h-[75vh] md:h-screen rounded-2xl overflow-hidden mb-8 flex flex-col justify-center">
+        <div className="relative min-h-screen md:h-screen rounded-2xl overflow-hidden mb-8 flex flex-col justify-center">
           {/* Blurred background */}
           <div
             className="absolute inset-0 bg-cover bg-center"
