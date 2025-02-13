@@ -109,7 +109,7 @@ export default function EventDetails({ id }) {
           <div className="absolute inset-0 bg-gradient-to-t from-[#131324] via-[#13132455] to-transparent z-20" />
           
           {/* Bottom text */}
-          <div className="absolute bottom-0 p-8 z-30">
+          <div className="absolute bottom-0 p-8 z-30 mt-6">
             <h1 className="text-2xl md:text-3xl mb-4">{event.title}</h1>
             <p className="md:text-lg text-gray-200">{event.description}</p>
           </div>
