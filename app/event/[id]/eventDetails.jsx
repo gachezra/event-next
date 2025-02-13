@@ -84,33 +84,33 @@ export default function EventDetails({ id }) {
         className="max-w-7xl mx-auto"
       >
         {/* Hero Section */}
-        <div className="relative h-[60vh] rounded-2xl overflow-hidden mb-8">
+        <div className="relative h-[75vh] md:h-screen rounded-2xl overflow-hidden mb-8 flex flex-col justify-center">
           {/* Blurred background */}
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
               backgroundImage: `url(${event.image})`,
-              filter: 'blur(10px)',
+              filter: 'blur(12px)',
               transform: 'scale(1.1)',
             }}
           />
-          
+        
           {/* Center image */}
-          <div className="absolute top-0 inset-0 flex items-center justify-center z-10 rounded-sm mb-4">
+          <div className="absolute inset-0 flex items-center justify-center z-10">
             <img
               src={event.image}
               alt={event.title}
-              className="h-full w-auto object-contain rounded-lg shadow-lg p-6 mb-8"
+              className="max-h-[90%] max-w-[90%] object-contain rounded-lg shadow-lg p-4 bg-opacity-90"
               onError={(e) => (e.target.src = placeholderImage)}
             />
           </div>
-
-          {/* Gradient overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#131324] via-[#13132455] to-transparent z-20" />
-          
-          {/* Bottom text */}
-          <div className="absolute bottom-0 p-8 z-30 mt-6">
-            <h1 className="text-2xl md:text-3xl mb-4">{event.title}</h1>
+        
+          {/* Softer gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#131324dd] via-[#13132488] to-transparent z-20" />
+        
+          {/* Bottom text, adjusted for visibility */}
+          <div className="absolute bottom-0 w-full p-6 bg-[#131324aa] z-30 rounded-b-2xl backdrop-blur-md">
+            <h1 className="text-2xl md:text-3xl text-white">{event.title}</h1>
             <p className="md:text-lg text-gray-200">{event.description}</p>
           </div>
         </div>
