@@ -100,7 +100,7 @@ export default function EventDetails({ id }) {
             <img
               src={event.image}
               alt={event.title}
-              className="h-full w-auto object-contain rounded-lg shadow-lg p-6"
+              className="h-full w-auto object-contain rounded-lg shadow-lg p-6 mb-8"
               onError={(e) => (e.target.src = placeholderImage)}
             />
           </div>
